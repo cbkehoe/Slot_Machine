@@ -11,7 +11,12 @@ let result1, result2, result3
 /*----- cached element references -----*/
 
 /*----- event listeners -----*/
-
+document.querySelector('button').addEventListener('click', () => {
+    result1.result1 = getRandNum();
+    result2.result1 = getRandNum();
+    result3.result3 = getRandNum();
+    checkWin()
+})
 /*----- functions -----*/
 function checkWin() {
   if (result1 === result2 && result1 === result3) {
