@@ -5,27 +5,38 @@
 //const outcomes = (min, max) => Math.floor(Math.random() * 0 - 3 +1) + min; 
 //const results = outcomes (option => 0, 3)
 /*----- app's state (variables) -----*/
-let result1, result2, result3 
+let result1, result2, result3, outcomeMessage
 
 //let display = results(result => results.outcomes);
 /*----- cached element references -----*/
-
+const slot1 = document.getElementById('slot1')
+const slot2 = document.getElementById('slot2')
+const slot3 = document.getElementById('slot3')
+const outcomes = document.getElementById('outcomes')
 /*----- event listeners -----*/
 document.querySelector('button').addEventListener('click', () => {
-    result1.result1 = getRandNum();
-    result2.result1 = getRandNum();
-    result3.result3 = getRandNum();
-    checkWin()
+    init()
+    render()
 })
+
 /*----- functions -----*/
 function checkWin() {
   if (result1 === result2 && result1 === result3) {
-    console.log('You Win!')
-  } else { 
-    console.log('Sorry, you lose') 
+    outcomeMessage = 'You Win!'
+  } else {
+    outcomeMessage = 'Sorry, You Lose'
   }
+  render()
 }
 
+function render() {
+    slot1.innerText = result1
+    slot2.innerText = result2
+    slot3.innerText = result3
+    outcomes.innerText = outcomeMessage
+}
+
+//document.write(result1, result2, result3);
 //console.log(display)
 
 
