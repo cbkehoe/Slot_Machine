@@ -1,0 +1,35 @@
+body {
+    margin: auto;
+       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  h1 {
+    margin: auto;
+    align-content: top;
+    text-align: center;
+    align-items: center;
+  
+  }
+  p {
+    margin: auto;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0 
+  }
+  
+  button{
+      grid-column: span 3;
+      margin: auto;
+      background-color: red;
+      color: black;
+      border: 2vmin solid gold;
+      border-radius: 4vmin;
+      font-size: 12;
+      outline: none;
+  }
+  
+  
