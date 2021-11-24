@@ -1,3 +1,22 @@
+
+th
+{
+    left:700px;
+    top:300px;
+    position:fixed
+}
+header{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-left: auto;
+    padding: 10px 50px 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: larger;
+
+}
 body {
     margin: auto;
        display: flex;
@@ -30,14 +49,14 @@ body {
       margin: auto;
       background-color: red;
       color: black;
-      border: 2vmin solid gold;
+      border: 1vmin solid gold;
       border-radius: 4vmin;
       font-size: 12;
       outline: none;
   }
-  
+
   #slot-machine {
-    height: 300px;
+    height: 310px;
     width: 475px;
     background-image: url(https://i.imgur.com/KlhmOGx.png);
     background-size: cover;
@@ -45,6 +64,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
   }
 
   .panel {
@@ -54,3 +74,8 @@ body {
     align-items: center;
     justify-content: center;
   }
+  /* @keyframes blink {
+    50% {
+      background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+    }
+  } */
