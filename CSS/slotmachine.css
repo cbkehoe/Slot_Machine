@@ -74,7 +74,20 @@ body {
     align-items: center;
     justify-content: center;
   }
+  #cash {
+    margin-left: auto;
+    display: flex;
+    top: 0;
+    position:absolute;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 10px 95px 0 830px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: larger;
 
+  }
   .walletAmount {
     margin-left: auto;
   }
