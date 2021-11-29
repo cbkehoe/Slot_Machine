@@ -8,7 +8,7 @@ const slot1 = document.getElementById('slot1')
 const slot2 = document.getElementById('slot2')
 const slot3 = document.getElementById('slot3')
 const outcomes = document.getElementById('outcomes')
-
+const header = document.getElementById('wallet')
 /*----- event listeners -----*/
 document.querySelector('button').addEventListener('click', () => {
     init()
@@ -33,18 +33,20 @@ function render() {
     slot2.innerText = result2
     slot3.innerText = result3
     outcomes.innerText = outcomeMessage
-  
+    header.innerHTML = wallet
+
 }
 
-// let walletAmount = 10;
+let wallet = [10];
 
-// function earnLoseMoney() {
-//     if (result1 === result2 && result1 === result3) {
-//         walletAmount ++1;
-// } else {
-//     walletAmount (-1);
-// }
-
+function earnLoseMoney() {
+    if (result1 === result2 && result1 === result3) {
+        wallet ++;
+} else {
+    wallet --;
+}
+render()
+}
 function getRandNum() {
   return Math.floor(Math.random() *3);
 }
@@ -53,6 +55,6 @@ function init(){
   result1 = getRandNum()
   result2 = getRandNum()
   result3 = getRandNum()
-
+  walletAmount = earnLoseMoney()
   checkWin()
 }

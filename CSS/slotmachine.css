@@ -11,7 +11,7 @@ header{
     align-items: left;
     text-align: left;
     margin-left: auto;
-    padding: 10px 50px 0 0;
+    padding: 10px 60px 0 0;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: larger;
@@ -74,8 +74,27 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  .walletAmount {
+    margin-left: auto;
+  }
   /* @keyframes blink {
     50% {
       background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
     }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+    }
+  }
+  @-moz-keyframes blink {
+    50% {
+      background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+    }
+  }
+  .laser {
+    animation: blink .5s infinite;
+    -webkit-animation: blink .5s infinite;
+    -moz-animation: blink .5s infinite;
   } */
