@@ -69,5 +69,5 @@ function init() {
   endGame = gameOver()
   checkWin()
   render()
-  bust() 
+  bust()
 }
