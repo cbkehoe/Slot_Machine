@@ -30,3 +30,5 @@ In the future I plan to add additional features including:
 
 3. A function to place a "bet" of the amount of their choosing which increases or decreases the wallet value by the amount placed. 
 
+4. Replacing the button with a 'lever' in the form of a scroll bar which fires the function when the scroll reaches the bottom 
+
